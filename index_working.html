@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Exercise Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>AI Exercise Counter</h1>
+
+    <p>Select an exercise and start your camera.</p>
+
+    <select id="exerciseSelect">
+      <option value="squat">Squat</option>
+      <option value="pushup">Push-up</option>
+    </select>
+
+    <br><br>
+
+    <button id="startButton">Start Camera</button>
+    <button id="stopButton">Stop</button>
+
+    <div class="camera-container">
+      <video
+        id="video"
+        autoplay
+        playsinline>
+      </video>
+
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="results">
+
+      <h2 id="exerciseName">
+        Exercise: Squat
+      </h2>
+
+      <h2 id="count">
+        Count: 0
+      </h2>
+
+      <p id="status">
+        Status: Ready
+      </p>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
